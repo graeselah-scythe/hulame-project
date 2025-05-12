@@ -1,0 +1,306 @@
+/* AdminPage.css */
+
+.adminPage {
+  padding: 2rem;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 2px solid #e0e0e0;
+  box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.column2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.statContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.statLeft{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: -1rem;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.statRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 3.5rem;
+  padding-left: 45px;
+}
+
+.statHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+
+.statHeaderText {
+  flex-grow: 1;
+}
+
+.iconAndTitle {
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  gap: 0.5rem; /* Reduce spacing between icon and text */
+  margin-top: -2rem; /* Remove any unwanted top margin */
+}
+
+.earningIcon {
+  width: 24px;
+  height: 24px;
+  color: #4f46e5;
+}
+
+.title {
+  margin-top: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #5998F6;
+
+}
+
+.statValue {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #111827;
+}
+.statRightUsers{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 3.5rem;
+  padding-left: 45px;
+}
+.statLeftUsers{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: -0.5rem;
+  padding-left: 45px;
+}
+.statGroup {
+ margin-top:  -0.5rem;
+ margin-left: 45px;
+}
+
+
+/* Transaction Card */
+.transactionCard {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+/* Match scrollbar styling */
+.transactionCard::-webkit-scrollbar {
+  width: 6px;
+}
+.transactionCard::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.transactionList {
+  max-height: 240px;  /* same as .activityList */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.transactionItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border-radius: 30px;
+  border: 1px solid #e0e0e0;
+}
+
+.transactionImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.transactionDetails {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.transactionName {
+  font-weight: 600;
+  display: block;
+}
+
+.transactionDate {
+  font-size: 0.85rem;
+  color: #5998F6;
+}
+
+.transactionPrice {
+  font-weight: 600;
+  color: #5998F6;
+}
+
+
+/* Recent Activity Card */
+.recentActivityCard {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+/* Scrollbar customization (optional) */
+.recentActivityCard::-webkit-scrollbar {
+  width: 6px;
+}
+.recentActivityCard::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+/* Activity List Item */
+.activityItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f0f0;
+  
+
+}
+
+.activityProfileImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circular image */
+  object-fit: cover;
+  border: 1px solid #ddd;
+  margin-top: 8px; /* Align with text */
+}
+
+
+.activityDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 0;
+  line-height: 1.2; /* Makes vertical space tighter */
+}
+
+.activityMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.activityDate {
+  font-size: 12px;
+  color: #888;
+  margin-top: 0;
+}
+.seeMoreLink {
+  font-size: 16px;
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  margin-right: 20px;
+}
+
+.seeMoreLink:hover,
+.seeMoreLink:active {
+  color: #345990;
+  text-decoration: underline;
+
+}
+
+
+.activityName {
+  font-weight: 600;
+  margin-left: 10px;
+ 
+}
+
+.activityText {
+  font-size: 14px;
+  color: #555;
+
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.activityList {
+  max-height: 240px;   /* subtract space for title/header */
+  overflow-y: auto;
+}
+
+
+

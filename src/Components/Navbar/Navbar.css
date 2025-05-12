@@ -1,0 +1,143 @@
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* fixed width */
+    height: 78px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: 0 4px 4px #00000040;
+    z-index: 999;
+    padding: 0 30px;
+    box-sizing: border-box; /* very important */ 
+ 
+  }
+
+
+  .menu {
+    display: none;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .menu-btn {
+    width: 30px;
+}
+
+
+.img {
+  position: absolute;
+  left: 40px;
+  top: -85px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 245.14px;
+  margin-top: 0px;
+  }
+
+.nav-menu {
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    list-style: none;
+    right: 130px;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.nav-link {
+  text-decoration: none; /* Remove default underline */
+  color: #111827; /* Text color */
+  text-underline-offset: 3px; /* Add gap between text and underline */
+}
+
+.nav-link:hover {
+  text-decoration: none; /* Underline on hover */
+  text-decoration-thickness: 3px; /* Make the underline thicker */
+  text-underline-offset: 3px; /* Keep the gap on hover */
+  color: #5998F6; /* Optional: change color on hover */
+}
+
+/* Ensure underline is visible for the active link */
+.nav-link:focus, .nav-link:active {
+  text-decoration: underline; /* Make underline persist when the link is focused/active */
+  text-decoration-thickness: 3px; /* Keep the underline thick when active */
+  text-underline-offset: 10px; /* Keep the gap when active */
+  color: #5998F6; /* Optional: color change for active link */
+}
+
+
+
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    background-color: #5998F6;
+    color: white;
+  }
+
+
+
+  @media (max-width: 720px) {
+    .menu {
+      display: flex;
+    }
+  
+    /* Initially hide the menu */
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 78px; /* Adjust position based on navbar height */
+      left: 0;
+      background-color: #fff; /* Optional: set background color */
+      flex-direction: column; /* Stack menu items vertically */
+      gap: 15px;
+      width: 30%; /* Make the menu take full width on mobile */
+      padding: 20px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 8px; /* Optional: rounded corners */
+      margin-left: 20px;
+      
+    }
+  
+    /* When menu is toggled, display it */
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .menu-btn {
+      cursor: pointer;
+    }
+
+    .nav-link.active {
+      color: #5998F6; /* example highlight color */
+      font-weight: bold;
+      border-bottom: 3px solid #5998F6;
+    }
+
+  }

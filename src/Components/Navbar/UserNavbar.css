@@ -1,0 +1,212 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center; /* Vertically center children */
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);   
+    height: 78px; /* 👈 Add fixed height for vertical centering to work */
+  }
+  
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    height: 100%; /* optional if needed */
+    margin-top: 110px; /* ✅ Remove vertical shift */
+  }
+  
+
+.img {
+    width: 245.14px;
+  }
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    list-style: none;
+}
+
+.nav-link {
+  text-decoration: none; /* Remove default underline */
+  color: #111827; /* Text color */
+  text-underline-offset: 3px; /* Add gap between text and underline */
+}
+
+.nav-link:hover {
+  text-decoration: none; /* Underline on hover */
+  text-decoration-thickness: 3px; /* Make the underline thicker */
+  text-underline-offset: 3px; /* Keep the gap on hover */
+  color: #5998F6; /* Optional: change color on hover */
+}
+
+/* Ensure underline is visible for the active link */
+.nav-link:focus, .nav-link:active {
+  text-decoration: underline; /* Make underline persist when the link is focused/active */
+  text-decoration-thickness: 3px; /* Keep the underline thick when active */
+  text-underline-offset: 10px; /* Keep the gap when active */
+  color: #5998F6; /* Optional: color change for active link */
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.login {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    background-color: #5998F6;
+    color: white;
+  }
+
+  .heroIcon {
+    width: 30px;
+    height: 30px;
+    color: #111827;
+    transition: color 0.2s ease;
+  }
+  
+  .iconButton:hover .heroIcon {
+    color: #5998F6; 
+  }
+
+  .iconButton:active .heroIcon {
+    color: #5998F6; 
+  }
+
+  .iconButton.active .heroIcon {
+    color: #5998F6;
+  }
+
+  .iconGroup {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-left: 50px;
+    position: relative;
+  }
+  
+  .iconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .modal-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .confirm-btn {
+    background-color: #5998F6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    background-color: #9ca3af;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .post-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .post-modal {
+    position: relative;
+    width: 90%;
+    width: 1220px;
+    max-height: 95vh;
+    overflow-y: auto;
+    background-color: #f9fafb;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: #f87171;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .post-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+
+
+  @media (max-width: 720px) {
+    .menu {
+      display: flex;
+    }
+  
+    .nav-menu {
+      display: none;
+    }
+  }

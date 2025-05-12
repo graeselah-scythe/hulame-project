@@ -1,0 +1,175 @@
+.postContent {
+  padding: 2rem;
+  background-color: #f5f7fa;
+  min-height: 75vh;
+}
+
+.contentSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.contentColumns {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  align-items: stretch; /* Align top and bottom */
+}
+
+.aboutContainer {
+  background: white;
+  padding: 0px 70px 70px 70px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.postsContainer {
+  background: white;
+  padding: 0px 70px 70px 70px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  width: 780px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
+.aboutColumns {
+  display: flex;
+  align-items: flex-start;
+}
+
+.aboutMainColumn {
+  flex: 2;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.personalInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-top: -50px;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.infoRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #5998F6;
+  flex-shrink: 0;
+  margin-top: 30px;
+}
+
+.phoneIcon {
+  width: 24px;
+  height: 24px;
+  color: #5998F6;
+  flex-shrink: 0;
+  margin-top: 30px;
+}
+
+.infoLabel {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  margin-top: 30px;
+}
+
+.infoValue {
+  color: #444;
+  margin: 0;
+  font-size: 16px;
+}
+
+.socialLink {
+  color: #5998F6;
+  text-decoration: none;
+  word-break: break-all;
+  font-size: 16px;
+}
+
+.contactColumn {
+  display: flex;
+  margin-top: 48px;
+  margin-left: -10px;
+}
+
+.contactInfo {
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.postsTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.postItem {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.notificationOutline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.postIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.postNotification {
+  font-size: 16px;
+}
+
+.postNotification span {
+  color: #5998F6;
+}
+.viewPostLink {
+  color: #5998F6; /* Blue color for the link */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.viewPostLink:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
