@@ -26,7 +26,7 @@ import AdminDashboard from './Pages/AdminDashboard';
 import AdminConfirmation from './Pages/AdminConfirmation';
 import AdminUserManagement from './Pages/AdminUserManagement';
 import NotFound from './Pages/NotFound'; // ✅ 404 Page
-
+import CheckoutPage from './Pages/CheckoutPage';
 
 function AppContent() {
   const location = useLocation();
@@ -83,6 +83,7 @@ function AppContent() {
         <Route path='/admin-dashboard' element={<AdminDashboard />} />
         <Route path='/admin-confirmation' element={<AdminConfirmation />} />
         <Route path='/admin-management' element={<AdminUserManagement />} />
+        <Route path='/checkout' element={<CheckoutPage />} />
        
         
         {/* 404 fallback route */}
